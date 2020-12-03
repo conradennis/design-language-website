@@ -1,34 +1,91 @@
 - title: Philosophy
   pages:
-    - path: /philosophy/pov
+    - title: Point of view
+      path: /philosophy/pov
+    - title: Principles
+      path: /philosophy/principles
 - title: Gallery
   pages:
     - path: /gallery
-- title: Elements
+  hasDivider: true
+- title: Typography
   pages:
     - title: Typeface
-      path: /elements/typeface
+      path: /typography/typeface
     - title: Type basics
-      path: /elements/type-basics
+      path: /typography/type-basics
     - title: Type specs UI
-      path: /elements/type-specs-ui
-    - title: Color
-      path: /elements/color
-    - title: 2x Grid
-      path: /elements/2x-grid
-    - title: Logos
-      path: /elements/logos/8-bar
-    - title: Icons
-      path: /elements/icons/design
-    - title: Icon library
-      path: /elements/icon-library
+      path: /typography/type-specs-ui
+- title: Color
+  pages:
+    - path: /color
+- title: 2x Grid
+  pages:
+    - path: /2x-grid
+- title: IBM logos
+  pages:
+    - title: 8-Bar
+      path: /ibm-logos/8-bar
+    - title: Rebus
+      path: /ibm-logos/rebus
+- title: Iconography
+  pages:
+    - title: UI icons
+      path: /iconography/ui-icons/library
     - title: App icons
-      path: /elements/app-icons/design
+      path: /iconography/app-icons/library
     - title: Pictograms
-      path: /elements/pictograms/design
-    - title: Pictogram library
-      path: /elements/pictogram-library
-    - title: Photography
-      path: /elements/photography/overview
-    - title: Motion
-      path: /elements/motion/basics
+      path: /iconography/pictograms/library
+- title: Illustration
+  pages:
+    - title: Overview
+      path: /illustration/overview/
+    - title: Tips and techniques
+      path: /illustration/tips-and-techniques/
+    - title: Line style
+      path: /illustration/line-style/design
+    - title: Flat style
+      path: /illustration/flat-style/design
+    - title: Isometric style
+      path: /illustration/isometric-style/design
+- title: Photography
+  pages:
+    - title: Overview
+      path: /photography/overview
+    - title: Tips and techniques
+      path: /photography/tips-and-techniques
+- title: Data visualization
+  pages:
+    - title: Overview
+      path: /data-visualization/overview
+    - title: Charts
+      path: /data-visualization/charts
+    - title: Design
+      path: /data-visualization/design/basics
+- title: Layout
+  pages:
+    - title: Overview
+      path: /layout/overview
+    - title: Tips and techniques
+      path: /layout/tips-and-techniques
+- title: Animation
+  pages:
+    - title: Overview
+      path: /animation/overview/
+    - title: Classic principles
+      path: /animation/classic-principles/
+    - title: Tips and techniques
+      path: /animation/tips-and-techniques/
+  hasDivider: true
+- title: Resources
+  pages:
+    - path: /resources
+- title: What’s new
+  pages:
+    - path: /whats-new
+- title: Help
+  pages:
+    - title: Support
+      path: /help/support
+    - title: FAQ
+      path: /help/faq

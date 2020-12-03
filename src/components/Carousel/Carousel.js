@@ -9,6 +9,10 @@ const { prefix } = settings;
 let AP_ID;
 
 export default class Carousel extends React.Component {
+  initialX = null;
+
+  initialY = null;
+
   static propTypes = {
     /**
      * for slide images
@@ -25,10 +29,6 @@ export default class Carousel extends React.Component {
      */
     count: PropTypes.string.isRequired,
   };
-
-  initialX = null;
-
-  initialY = null;
 
   constructor(props) {
     super(props);
@@ -211,6 +211,8 @@ export default class Carousel extends React.Component {
                 draggable="false"
                 src={img.src}
                 alt={img.alt}
+                srcSet={img.srcSet}
+                sizes={img.sizes}
                 key={`img-${i}`}
                 className={img.className}
               />

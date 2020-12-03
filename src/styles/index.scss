@@ -1,14 +1,3 @@
-// Application bundle
-
-// colors, spacing, theme-tokens, functions, motion
-@import '~carbon-components/scss/globals/scss/vars';
-@import '~carbon-components/scss/globals/scss/typography';
-@import '~carbon-components/scss/globals/scss/layout';
-
-// mixins
-@import '~@carbon/elements/scss/layout/breakpoint';
-@import '~@carbon/elements/scss/type/styles';
-
 //---------------------------------------
 // IDL page
 //---------------------------------------
@@ -19,19 +8,12 @@
 @import 'philosophy';
 @import 'icons';
 @import 'footer';
-
+@import 'resources';
+@import 'data-vis';
+@import 'help';
+@import 'miniCardStyles';
 // IBM inserted cookie prefs
 @import 'ibm-cookies';
-
-// grid temp - should be added to grid package or theme
-@import 'grid-temp';
-
-// Temporary fix for ordered lists with up to 99 numbers
-// https://github.com/carbon-design-system/carbon/issues/3133
-ol .bx--list__item {
-  padding-left: $spacing-05; //adds .5rem extra padding
-  margin-left: -$spacing-03; //moves list to the left .5rem so text alignment stays the same
-}
 
 //---------------------------------------
 // IDL components
@@ -55,3 +37,8 @@ ol .bx--list__item {
 //---------------------------------------
 @import '../components/ColorBlock/color-block';
 @import '../components/ColorGrid/color-grid';
+
+//---------------------------------------
+// Table component
+//---------------------------------------
+@import 'narrative';

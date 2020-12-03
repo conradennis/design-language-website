@@ -11,6 +11,28 @@
   display: block;
 }
 
+.mobile-columns [class*='column'] {
+  --space: 0;
+}
+
+@include carbon--breakpoint-down('md') {
+  .mobile-columns {
+    display: flex;
+  }
+  .mobile-columns .one {
+    order: 1;
+  }
+  .mobile-columns .two {
+    order: 3;
+  }
+  .mobile-columns .three {
+    order: 2;
+  }
+  .mobile-columns .four {
+    order: 4;
+  }
+}
+
 //---------------------------------------
 // Font weight
 //---------------------------------------
@@ -24,15 +46,26 @@
   display: block;
 }
 
+.no-gap {
+  --space: 0;
+}
+
 //---------------------------------------
 // Type scale table
 //---------------------------------------
 $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   2.25rem, 2.625rem, 3rem, 3.375rem, 3.75rem, 4.25rem, 4.75rem, 5.25rem, 5.75rem;
 
+@include carbon--breakpoint-down('lg') {
+  .type-scale-table {
+    overflow-x: scroll;
+  }
+}
+
 .type-scale-table {
+  overflow-x: auto;
   background: $ui-02;
-  border-bottom: rem(1px) solid $ui-03;
+  border-bottom: 0.0625rem solid $ui-03;
 
   table tbody tr {
     border: none;
@@ -52,6 +85,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     padding-bottom: auto;
     color: $text-01;
     vertical-align: top;
+    padding-right: 1rem;
   }
 
   table tbody td:first-child {
@@ -59,7 +93,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
     padding: 0 $spacing-09 0 0;
 
     @include carbon--breakpoint('md') {
-      padding-right: rem(112px);
+      padding-right: 7rem;
     }
 
     @include carbon--breakpoint('lg') {
@@ -77,7 +111,6 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
       white-space: nowrap;
       width: 100%;
       line-height: 70%;
-      padding-right: 0;
     }
   }
 
@@ -106,7 +139,7 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   }
 
   table tbody tr:nth-child(7) td:first-child {
-    padding-bottom: rem(26px);
+    padding-bottom: 1.625rem;
   }
 
   table tbody tr:nth-child(8) td:first-child {
@@ -122,24 +155,24 @@ $type-scale: 0.75rem, 0.875rem, 1rem, 1.125rem, 1.25rem, 1.5rem, 1.75rem, 2rem,
   }
 
   table tbody tr:nth-child(11) td:first-child {
-    padding-bottom: rem(56px);
+    padding-bottom: 3.5rem;
   }
 
   table tbody tr:nth-child(12) td:first-child,
   table tbody tr:nth-child(13) td:first-child {
-    padding-bottom: rem(64px);
+    padding-bottom: 4rem;
   }
 
   table tbody tr:nth-child(14) td:first-child {
-    padding-bottom: rem(72px);
+    padding-bottom: 4.5rem;
   }
 
   table tbody tr:nth-child(15) td:first-child {
-    padding-bottom: rem(80px);
+    padding-bottom: 5rem;
   }
 
   table tbody tr:nth-child(16) td:first-child {
-    padding-bottom: rem(88px);
+    padding-bottom: 5.5rem;
   }
 
   table tbody tr:nth-child(17) td:nth-child(2) {

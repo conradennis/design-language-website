@@ -1,21 +1,25 @@
+.#{$prefix}--type-korean {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
 .#{$prefix}--type-hebrew {
-  font-family: 'IBM Plex Sans Hebrew';
+  font-family: 'IBM Plex Sans Hebrew', sans-serif;
 }
 
 .#{$prefix}--type-thai {
-  font-family: 'IBM Plex Thai';
+  font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
 .#{$prefix}--type-thai-looped {
-  font-family: 'IBM Plex Sans Thai Looped' !important;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
 }
 
 .#{$prefix}--type-devanagari {
-  font-family: 'IBM Plex Devanagari';
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
 }
 
 .#{$prefix}--type-arabic {
-  font-family: 'IBM Plex Arabic';
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .#{$prefix}--type-default,
@@ -37,6 +41,12 @@
 .#{$prefix}--type-mono * {
   font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono',
     'Bitstream Vera Sans Mono', Courier, monospace;
+}
+
+.#{$prefix}--mobile-column {
+  @include carbon--breakpoint('sm') {
+    margin-top: 0;
+  }
 }
 
 .#{$prefix}--type-italic {
@@ -61,8 +71,6 @@
       .#{$prefix}--list-box__field {
         background: $ui-02;
         height: 3rem;
-        padding-top: $spacing-05;
-        padding-bottom: rem(15px);
         border-bottom: 1px solid $carbon--gray-20;
 
         &:hover {
@@ -87,7 +95,6 @@
       .#{$prefix}--list-box__menu {
         top: 3rem;
         background: $ui-02;
-        max-height: 15rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px 0px;
 
         .#{$prefix}--list-box__menu-item {
@@ -95,7 +102,7 @@
 
           .#{$prefix}--list-box__menu-item__option {
             height: auto;
-            padding: rem(14px) 0;
+            padding: 0.875rem 0;
           }
         }
       }

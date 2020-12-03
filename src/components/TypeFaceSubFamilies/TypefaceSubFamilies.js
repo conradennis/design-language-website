@@ -83,6 +83,7 @@ export default class TypefaceSubFamilies extends React.Component {
               items={fontVariants}
               label={this.state.fontVariantLabel}
               selected={this.state.fontVariant}
+              size="xl"
               onChange={({ selectedItem }) => {
                 setTimeout(
                   () =>
@@ -146,7 +147,7 @@ export default class TypefaceSubFamilies extends React.Component {
               Regular Italic
             </div>
           </div>
-          <div>
+          <div className={`${prefix}--mobile-column`}>
             <div style={{ fontWeight: 450 }}>Text</div>
             <div
               style={{ fontWeight: 450 }}

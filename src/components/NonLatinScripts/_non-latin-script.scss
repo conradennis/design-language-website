@@ -5,8 +5,8 @@
   color: $carbon--white-0;
   background-color: $carbon--purple-60;
   text-align: center;
-  width: rem(50px);
-  height: rem(50px);
+  width: 3.125rem;
+  height: 3.125rem;
   position: absolute;
   right: 0;
   top: 1rem;
@@ -84,8 +84,8 @@
   font-weight: 400 !important;
   width: 100%;
   color: $carbon--gray-90;
-  -webkit-text-fill-color: $carbon--gray-90; // Needs manual autoprefixing
   font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-text-fill-color: $carbon--gray-90; // Needs manual autoprefixing
 
   &::selection {
     background: $carbon--purple-20;
@@ -122,22 +122,28 @@
 }
 
 .#{$prefix}--type-hebrew {
-  font-family: 'IBM Plex Sans Hebrew' !important;
+  font-family: 'IBM Plex Sans Hebrew', sans-serif !important;
 }
 
 .#{$prefix}--type-thai {
-  font-family: 'IBM Plex Thai' !important;
+  font-family: 'IBM Plex Sans Thai', sans-serif !important;
+}
+
+.#{$prefix}--type-korean {
+  font-family: 'IBM Plex Sans KR', sans-serif !important;
 }
 
 .#{$prefix}--type-thai-looped {
-  font-family: 'IBM Plex Sans Thai Looped' !important;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif !important;
 }
 
 .#{$prefix}--type-devanagari {
-  font-family: 'IBM Plex Devanagari' !important;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif !important;
   margin-top: $spacing-05; // https://github.com/carbon-design-system/design-language-website/issues/222
 }
 
 .#{$prefix}--type-arabic {
-  font-family: 'IBM Plex Arabic' !important;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
 }
+
+// TODO CJK

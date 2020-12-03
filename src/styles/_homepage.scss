@@ -1,5 +1,15 @@
 .homepage-tiles--end {
   margin-bottom: 10rem;
+  margin-top: 0.0625rem;
+}
+
+.homepage-row {
+  margin-top: 5rem;
+  --space: 0;
+}
+
+.Main-module--main--24PSV {
+  padding-bottom: 10rem;
 }
 
 .#{$prefix}--homepage-idl-tile-nested-content
